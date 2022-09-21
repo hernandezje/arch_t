@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <title>SumIntervalos</title>
+</head>
+<body>
+    <section>
+        <h3> Intervalos </h3> 
+        <p>Los intervalos están representados por un par de números enteros en forma de matriz. 
+            El primer valor del intervalo siempre será menor que el segundo valor. Ejemplo de intervalo: [1, 5]es un intervalo de 1 a 5. La longitud de este intervalo es 4.</p>
+        <h3>Intervalos Superpuestos</h3>
+        <p>Lista que contiene intervalos superpuestos:</p>
+        <div>
+            <table>
+                <tr>
+                    <td>   [
+                        [1,4],
+                        [7, 10],
+                        [3, 5]
+                     ]
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>La suma de las longitudes de estos intervalos es 7. Dado que [1, 4] y [3, 5] se superponen, podemos tratar el intervalo como [1, 5], que tiene una longitud de 4.</p>
+    </section>
+
+    <section id="primary-content">
+        
+       <form>
+        <div class="mb-3">
+            <div class="interval">
+                <h2>Ingresar interalos: </h2>
+            [<input name="inferior" id="inferior" required="required" onkeydown="filtro()"> /
+            <input name="superior" id="superior" required="required" onkeydown="filtro()">]
+            
+            </div>
+            <br>
+            <input class="button" type="button" value="agregar" id="agregar" >
+  
+        </div>
+        
+        </form> 
+        
+        <form>
+            <p>Intervalos: </p>
+              <p  id="interv">
+                
+              </p>
+              <input class="button" type="button" value="Sumar Intervalos" id="ordenar" >
+
+              <h2 id='result' name="result"></h2>
+        </form>
+        
+    
+        <h2 id='result' name="result"></h2>
+    </section>
+     
+</body>
+<script src="./js/addinterv.js"></script>
+<script src="./js/natur.js"></script>
+</html>

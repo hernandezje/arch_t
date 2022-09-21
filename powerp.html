@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <title>Power Perfect</title>
+</head>
+<body>
+    <h3>Potencia Perfecta</h3>
+    <section>
+        <p>Un número natural n es una <strong>potencia perfecta</strong> si existen dos números naturales m > 1 y k > 1 tales que n = m^k. Las primeras potencias perfectas son</p>
+
+        <div>
+            <table>
+                <tr>
+                    <td>   4 = 2², 8 = 2³, 9 = 3², 16 = 2⁴, 25 = 5², 27 = 3³, 32 = 2⁵, 
+                        36 = 6², 49 = 7², 64 = 2⁶, ...
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>el siguiente verifica si un numero natural entero es una potencia perfecta</p>
+    </section>
+
+    <section id="primary-content">
+        <h2>Ingresar número entero natural</h2>
+       <form>
+        <div class="mb-3">
+            <input type="number" name="potencia" id="potencia" required="required" onkeydown="filtro()">
+            <input class="button" type="button" value="verificar" id="validate" >
+        </div>
+        
+        </form> 
+    
+        <h2 id='result' name="result"></h2>
+    </section>
+     
+</body>
+<script src="./js/calcular.js"></script>
+<script src="./js/natur.js"></script>
+</html>
